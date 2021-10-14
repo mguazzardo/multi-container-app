@@ -13,14 +13,14 @@ export default class App extends Component {
 
   componentWillMount() {
     this.getTopics();
-  }
+
 
   async getTopics() {
 
     try {
 
       this.setState({ isLoading: true });
-      let response = await fetch('http://localhost:8080/api/topics');
+      let response = await fetch('http://multi-container-app:8080/api/topics');
       let data = await response.json();
 
       this.setState({
