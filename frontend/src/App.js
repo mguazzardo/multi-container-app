@@ -20,7 +20,7 @@ export default class App extends Component {
     try {
 
       this.setState({ isLoading: true });
-      let response = await fetch('http://multi-container-app:8080/api/topics');
+      let response = await fetch('http://backend:8080/api/topics');
       let data = await response.json();
 
       this.setState({
