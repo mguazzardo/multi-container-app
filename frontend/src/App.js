@@ -15,7 +15,7 @@ export default class App extends Component {
     this.getTopics();
 
 
-  async getTopics() {
+  async getTopics = () => {
 
     try {
 
